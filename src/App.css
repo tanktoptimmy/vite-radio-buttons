@@ -1,0 +1,31 @@
+.input-hidden {
+  position: absolute;
+  left: -9999px;
+}
+
+input[type=radio] + label {
+  margin: 20px 
+}
+
+input[type=radio]:checked + label>img {
+  width: 30px;
+  height: 30px;
+}
+
+input[type=radio]:checked + label>img.selected {
+  display: block
+}
+input[type=radio]:checked + label>img.notSelected {
+  display: none
+}
+/* Stuff after this is only to make things more pretty */
+input[type=radio] + label>img.selected {
+  display: none
+}
+input[type=radio] + label>img.notSelected {
+  display: block
+}
+
+
+
+
