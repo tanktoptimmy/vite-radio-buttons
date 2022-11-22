@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import tick from './assets/tick.svg'
 import reactLogo from './assets/react.svg'
 import './App.css'
@@ -13,7 +12,7 @@ function App() {
           id="sad" class="input-hidden" />
         <label for="sad">
           <img className="selected" src={tick}/>
-          <img className="notSelected" src={reactLogo}/>
+          <div className="notSelected"/>
           <p>Boom</p>
         </label>
 
@@ -22,7 +21,7 @@ function App() {
           id="happy" class="input-hidden" />
         <label for="happy">
             <img className="selected" src={tick}/>
-            <img className="notSelected" src={reactLogo}/>
+            <div className="notSelected"/>
             <p>Bang</p>
         </label>
 
@@ -31,7 +30,7 @@ function App() {
           id="bottom" class="input-hidden" />
         <label for="bottom">
             <img className="selected" src={tick}/>
-            <img className="notSelected" src={reactLogo}/>
+            <div className="notSelected"/>
             <p>Wallop</p>
         </label>
       </div>

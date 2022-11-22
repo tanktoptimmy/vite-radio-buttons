@@ -25,18 +25,22 @@ input[type=radio]:checked + label>img {
   height: 30px;
 }
 
+
 input[type=radio]:checked + label>img.selected {
   display: inline-block
 }
-input[type=radio]:checked + label>img.notSelected {
+input[type=radio]:checked + label .notSelected {
   display: none
 }
 /* Stuff after this is only to make things more pretty */
 input[type=radio] + label>img.selected {
   display: none
 }
-input[type=radio] + label>img.notSelected {
-  display: inline-block
+input[type=radio] + label .notSelected {
+  border: 1px solid #B4BFD3;
+  border-radius: 100px;
+  height: 30px;
+  width: 30px;
 }
 
 
